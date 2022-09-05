@@ -22,4 +22,8 @@
 		margin: 0;
 		list-style: none;
 	}
+
+    li {
+        margin: 1rem 0;
+    }
 </style>
