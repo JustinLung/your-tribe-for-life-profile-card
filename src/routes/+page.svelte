@@ -1,1 +1,5 @@
-<h1>Hello World</h1>
+<script lang="ts">
+	import Weather from '$lib/components/Weather.svelte';
+</script>
+
+<Weather degrees={30} firstName="Justin" />
