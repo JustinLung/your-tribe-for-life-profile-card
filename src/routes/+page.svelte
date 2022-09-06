@@ -12,7 +12,11 @@
 		degrees={data.document.data.degrees}
 		description={data.document.data.description}
 	/>
-	<WeatherWarning name={data.document.data.name} />
+	<WeatherWarning
+		warning="Excessive Heat warning"
+		warningMessage="National Weather Service: Excessive Heat Warning in"
+		name={data.document.data.name}
+	/>
 	<WeatherStudents />
 </div>
 

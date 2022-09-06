@@ -1,11 +1,13 @@
 <script lang="ts">
 	import Border from '$lib/components/Border.svelte';
 	export let name: string;
+	export let warningMessage: string;
+	export let warning: string;
 </script>
 
 <section>
-	<p>Excessive Heat warning</p>
-	<p>National Weather Service: Excessive Heat Warning in {name}.</p>
+	<p>{warning}</p>
+	<p>{warningMessage} {name}.</p>
 	<Border />
 </section>
 
