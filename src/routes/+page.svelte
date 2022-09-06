@@ -1,13 +1,17 @@
-<script>
+<script lang="ts">
 	import WeatherHeader from '$lib/components/WeatherHeader.svelte';
 	import WeatherWarning from '$lib/components/WeatherWarning.svelte';
 	import WeatherStudents from '$lib/components/WeatherStudents.svelte';
 
-	export let data;
+	export let data: any;
 </script>
 
 <div>
-	<WeatherHeader firstName={data.document.data.name} degrees={data.document.data.degrees} description={data.document.data.description} />
+	<WeatherHeader
+		firstName={data.document.data.name}
+		degrees={data.document.data.degrees}
+		description={data.document.data.description}
+	/>
 	<WeatherWarning name={data.document.data.name} />
 	<WeatherStudents />
 </div>
