@@ -2,20 +2,19 @@
 	import WeatherHeader from '$lib/components/WeatherHeader.svelte';
 	import WeatherWarning from '$lib/components/WeatherWarning.svelte';
 	import WeatherStudents from '$lib/components/WeatherHobbies.svelte';
+	import type { PageData } from './$types';
 
-	export let data: any;
+	export let data: PageData;
+
+	const { name, degrees, description } = data.document;
 </script>
 
 <div>
-	<WeatherHeader
-		firstName={data.document.data.name}
-		degrees={data.document.data.degrees}
-		description={data.document.data.description}
-	/>
+	<WeatherHeader firstName={name} {degrees} {description} />
 	<WeatherWarning
 		warning="Excessive Heat warning"
 		warningMessage="National Weather Service: Excessive Heat Warning in"
-		name={data.document.data.name}
+		{name}
 	/>
 	<WeatherStudents />
 </div>

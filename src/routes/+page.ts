@@ -8,7 +8,7 @@ export async function load({ fetch, request }: any) {
 	const document = await client.getByUID('page', UID);
 
 	if (document) {
-		return { document };
+		return { document: document.data };
 	}
 
 	error(404, 'Not found');
