@@ -6,7 +6,7 @@
 </script>
 
 <section>
-	<p>{warning}</p>
+	<h2>{warning}</h2>
 	<p>{warningMessage} {name}.</p>
 	<Border />
 </section>
@@ -19,7 +19,8 @@
 		padding: 1rem;
 	}
 
-	section p:first-child {
+	h2 {
+		font-size: 1.2rem;
 		font-weight: bold;
 	}
 </style>

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import WeatherHeader from '$lib/components/WeatherHeader.svelte';
 	import WeatherWarning from '$lib/components/WeatherWarning.svelte';
-	import WeatherStudents from '$lib/components/WeatherStudents.svelte';
+	import WeatherStudents from '$lib/components/WeatherHobbies.svelte';
 
 	export let data: any;
 </script>
@@ -26,7 +26,7 @@
 		height: 100%;
 		border-radius: 0.3rem;
 		max-width: 35rem;
-		background-color: var(--color-dark-blue);
+		background: var(--gradient);
 	}
 
 	@media (min-width: 50rem) {
